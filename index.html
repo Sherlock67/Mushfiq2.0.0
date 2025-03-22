@@ -8,6 +8,7 @@
         document.documentElement.classList.remove('no-js');
         document.documentElement.classList.add('js');
     </script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <link rel="stylesheet" href="css/vendor.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
@@ -112,13 +113,17 @@
                         <div class="max-w-md mx-auto my-10 bg-gray-800 p-5 rounded-md shadow-sm">
                           <div class="m-7">
                             <form id="contact-form" method="POST">
-                                    <div style="color:white">
-                                        <label for="sampleInput">Your email</label>
-                                        <input class="u-fullwidth" type="email" id="sampleInput">
+                                <div>
+                                    <label for="name">Name</label>
+                                    <input class="u-fullwidth" type="text" id="name">
+                                </div>
+                                    <div>
+                                        <label for="email">Your email</label>
+                                        <input class="u-fullwidth" type="email" id="email">
                                     </div>
                                     <div>
-                                        <label for="sampleInput">Subject</label>
-                                        <input class="u-fullwidth" type="text" id="sampleInput">
+                                        <label for="subject">Subject</label>
+                                        <input class="u-fullwidth" type="text" id="subject">
                                     </div>
                                     <label for="exampleMessage">Message</label>
                                     <textarea class="u-fullwidth" placeholder="Your message" id="exampleMessage"></textarea>
@@ -212,5 +217,6 @@
         </footer> <!-- end s-footer -->
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/emailsender.js"></script>
 </body>
 </html>
