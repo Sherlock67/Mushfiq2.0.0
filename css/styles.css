@@ -2392,7 +2392,12 @@ td:last-child {
     background-color: var(--color-info);
     color           : var(--color-info-content);
 }
-
+.resume-item {
+    padding: 0 0 20px 20px;
+    margin-top: -2px;
+    border-left: 2px solid #0563bb;
+    position: relative;
+}
 .alert-box--info .alert-box__close::before,
 .alert-box--info .alert-box__close::after {
     background-color: var(--color-info-content);
